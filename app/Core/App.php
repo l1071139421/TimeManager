@@ -6,6 +6,7 @@ class App
     public static $db = null;
     public static $config = null;
     public static $input = null;
+    public static $template = null;
 
     public function __construct($filename = null, $path = null)
     {
@@ -48,5 +49,13 @@ class App
         self::$input = Input::forge();
 
         return self::$input;
+    }
+
+    public static function getTemplate()
+    {
+        if (self::$template == null) {
+            self::$template = Template::forge(implode('/', array(dirname(__DIR__), 'Views')));
+        }
+        return self::$template;
     }
 }

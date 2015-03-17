@@ -1,3 +1,4 @@
 vendor/
 composer.lock
 app/Config/config.php
+route/mux.php
