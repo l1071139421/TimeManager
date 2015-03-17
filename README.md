@@ -6,4 +6,5 @@
 <br/>
 ========================
 <br/>
-
+Config設定：<br/>
+請參考app/Config/ConfigExemple.php
